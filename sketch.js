@@ -8,8 +8,9 @@ function preload() {
   grotesk = loadFont("grotesk.otf");
 }
 
-function setup() {
-  createCanvas(400, 400);
+function setup() {    
+  let myCanvas = createCanvas(600, 400);
+  myCanvas.parent('canvas');
   textFont(grotesk);
   textSize(fontSize);
   x = width / 2 - 80;
@@ -23,7 +24,8 @@ function setup() {
 }
 
 function draw() {
-  background(200);
+  background(255);
+  fill(0);
   beginShape();
   for (let i = 0; i < firstLetter.length; i++) {
     vertex(firstLetter[i].x, firstLetter[i].y);
@@ -35,7 +37,7 @@ function draw() {
     if (firstLetter[i].x >= secondLetter[i].x) {
       firstLetter[i].x--;
     }
-        if (firstLetter[i].y >= secondLetter[i].y) {
+    if (firstLetter[i].y >= secondLetter[i].y) {
       firstLetter[i].y--;
     }
 
