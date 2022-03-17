@@ -1,7 +1,8 @@
 html, body {
     margin: 0;
     padding: 0;
-    color: blue;
+    background-color: whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
   canvas {
     display: block;
