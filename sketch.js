@@ -63,7 +63,7 @@ function draw() {
     //ellipse(firstLetter[i].x, firstLetter[i].y, 10, 10);
     push()
     translate(firstLetter[i].x, firstLetter[i].y);
-    line(-5,-5,5,5);
+    line(-5,-5,5,-5);
     pop();
     
     if (firstLetter[i].x <= firstLetter1[i].x) {
@@ -89,7 +89,7 @@ function draw() {
     
     push()
     translate(secondLetter[i].x, secondLetter[i].y);
-    line(-8,-8,8,8);
+    line(-5,-5,5,-5);
     pop();
     
     if (secondLetter[i].x <= secondLetter1[i].x) {
@@ -113,7 +113,7 @@ function draw() {
     
     push()
     translate(thirdLetter[i].x, thirdLetter[i].y);
-    line(-8,-8,8,8);
+    line(-5,-5,5,-5);
     pop();
     
     if (thirdLetter[i].x <= thirdLetter1[i].x) {
