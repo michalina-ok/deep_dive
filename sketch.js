@@ -10,10 +10,6 @@ let x, y;
 let colorPicker;
 
 
-
-function draw() {
-  background(colorPicker.color());
-}
 function preload() {
   grotesk = loadFont("grotesk.otf");
 }
